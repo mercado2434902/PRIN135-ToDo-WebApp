@@ -12,8 +12,4 @@ HTML and CSS alone cannot dynamically add new tasks, delete tasks, edit task tex
 ## Run
 Open `index.html` in a browser.
 
-## GitHub Pages
-1. Create a repository named `PRIN135-ToDo-WebApp`.
-2. Upload `index.html` and `style.css` to the repository root.
-3. Open Settings → Pages.
-4. Choose Deploy from a branch, select `main` and `/ (root)`, then Save.
+
