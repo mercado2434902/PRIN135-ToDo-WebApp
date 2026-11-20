@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="todo-card">
+    <header>
+      <h1>Todo List</h1>
+    </header>
+
+    <form class="add-form">
+      <input type="text" placeholder="What needs to be done?" aria-label="New task">
+      <input class="hours-input" type="number" min="0" placeholder="0" aria-label="Estimated hours">
+      <button type="button" title="CSS-only demo: adding tasks requires JavaScript">Add</button>
+    </form>
+
+    <input class="filter-radio" type="radio" name="filter" id="filter-all" checked>
+    <input class="filter-radio" type="radio" name="filter" id="filter-active">
+    <input class="filter-radio" type="radio" name="filter" id="filter-completed">
+
+    <nav class="toolbar" aria-label="Task filters">
+      <div class="filters">
+        <label for="filter-all">All</label>
+        <label for="filter-active">Active</label>
+        <label for="filter-completed">Completed</label>
+      </div>
+      <span class="text-action" title="Requires JavaScript">Mark all done</span>
+    </nav>
+
+    <ul class="task-list">
+      <li class="task-row">
+        <input type="checkbox" id="task-1">
+        <label class="task-name" for="task-1">Reply to emails</label>
+        <span class="difficulty easy">Easy · 1h</span>
+        <span class="delete" title="Requires JavaScript">×</span>
+      </li>
+      <li class="task-row">
+        <input type="checkbox" id="task-2">
+        <label class="task-name" for="task-2">Fix login bug</label>
+        <span class="difficulty medium">Medium · 4h</span>
+        <span class="delete" title="Requires JavaScript">×</span>
+      </li>
+      <li class="task-row">
+        <input type="checkbox" id="task-3">
+        <label class="task-name" for="task-3">Build reports page</label>
+        <span class="difficulty hard">Hard · 6h</span>
+        <span class="delete" title="Requires JavaScript">×</span>
+      </li>
+      <li class="task-row">
+        <input type="checkbox" id="task-4" checked>
+        <label class="task-name" for="task-4">Plan sprint</label>
+        <span class="difficulty easy">Easy · 2h</span>
+        <span class="delete" title="Requires JavaScript">×</span>
+      </li>
+    </ul>
+
+    <footer class="footer">
+      <span>3 items left · 13 hours total</span>
+      <span class="text-action" title="Requires JavaScript">Clear completed</span>
+    </footer>
+    <p class="note">CSS-only version: checkboxes and filters work. Adding, deleting, editing, and bulk actions need JavaScript or a backend.</p>
+  </main>
+</body>
+</html>
